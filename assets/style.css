@@ -1,0 +1,120 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*manter as medidas*/
+    font-family: inherit;
+    color: #000;
+    font-size: inherit;
+}
+
+body {
+    min-height: 100vh;
+    /* tamanho mínimo da tela do usuário */
+    margin: 0;
+    display: flex;
+    font-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: snow;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+.content {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 300px;
+}
+
+.content h1 {
+    font-family: 'Palette Mosaic', cursive;
+    font-size: 200%;
+    margin: 20px;
+    letter-spacing: -2px;
+    cursor: text;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+form input {
+    height: 40px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    width: 80%;
+    background-color: #fffafaa1;
+    padding: 0 6px;
+    color: #000;
+}
+
+form input:focus{
+    background-color: snow;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+
+form button {
+    width: 10%;
+    margin-left: 10px;
+    border-radius: 4px;
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+    background-color: #fffafaa1;
+}
+
+button:hover {
+    background-color: rgb(127 195 103);
+}
+
+.date {
+    align-self: flex-end;
+    margin: 30px;
+}
+
+.geometric {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.geometric img {
+    margin: 5%;
+}
+/* 
+z-index: -1;
+position: fixed; */
+
+@media screen and (max-width: 600px) {
+    .geometric img {
+        max-width: 15%;
+        margin: 10%;
+    }
+
+    .content {
+        width: 80%;
+    }
+
+    .content h1 {}
+
+    form button {
+        width: 16%;
+    }
+}
