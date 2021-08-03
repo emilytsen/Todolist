@@ -26,7 +26,7 @@ body {
     background-color: transparent;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     width: 60%;
     height: 300px;
 }
@@ -37,6 +37,7 @@ body {
     margin: 20px;
     letter-spacing: -2px;
     cursor: text;
+    align-self: center;
 }
 
 form {
@@ -57,7 +58,7 @@ form input {
     color: #000;
 }
 
-form input:focus{
+form input:focus {
     background-color: snow;
 }
 
@@ -85,22 +86,125 @@ button:hover {
 }
 
 .geometric {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 100vh;
-    position: absolute;
     z-index: -1;
 }
 
 .geometric img {
-    margin: 5%;
+    position: absolute;
 }
-/* 
-z-index: -1;
-position: fixed; */
+
+.i1 {
+    top: 7vh;
+    left: 17vw;
+    transform: rotate(130deg);
+    width: 12%;
+}
+
+.i2 {
+    top: 26vh;
+    left: 84vw;
+    transform: rotate(130deg);
+    width: 8%;
+}
+
+.i3 {
+    top: 93vh;
+    left: 5vw;
+    transform: rotate(74deg);
+    width: 12%;
+}
+
+.i4 {
+    top: 0vh;
+    left: 86vw;
+    transform: rotate(130deg);
+    width: 9%;
+}
+
+.i5 {
+    top: 62vh;
+    left: 55vw;
+    transform: rotate(85deg);
+    width: 10%;
+}
+
+.i6 {
+    top: -1vh;
+    left: 3vw;
+    transform: rotate(130deg);
+    width: 8%;
+
+}
+
+.i7 {
+    top: 85vh;
+    left:72vw;
+    transform: rotate(196deg);
+    width: 12%;
+}
+
+.i8 {
+
+    top: 53vh;
+    left: 3vw;
+    transform: rotate(130deg);
+    width: 15%;
+
+}
+
+.i9 {
+    top: 45vh;
+    left: 26vw;
+    transform: rotate(130deg);
+    width: 20%;
+}
+
+.i10 {
+    top: 114vh;
+    left: 37vw;
+    transform: rotate(262deg);
+    width: 12%;
+}
+
+.i11 {
+    top: 5vh;
+    left: 52vw;
+    transform: rotate(313deg);
+    width: 15%;
+}
+
+.i12 {
+    top: 132vh;
+    left: 13vw;
+    transform: rotate(130deg);
+    width: 12%;
+}
+
+.i13 {
+    top: 132vh;
+    left: 83vw;
+    transform: rotate(173deg);
+    width: 12%;
+}
+
+.list{
+    margin-top: 30px;
+    align-self: flex-start;
+    margin-left: 65px;
+    width: 100%;
+}
+
+.task{
+    max-height: 40px;
+}
+
+.task p{
+    font-size: 140%;
+}
+
+
+
+
 
 @media screen and (max-width: 600px) {
     .geometric img {

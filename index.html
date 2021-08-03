@@ -13,32 +13,38 @@
 
 <body >
     <div class="geometric">
-        <img src="/img/img1.png" alt="">
-        <img src="/img/img2.png" alt="">
-        <img src="/img/img3.png" alt="">
-        <img src="/img/img4.png" alt="">
-        <img src="/img/img5.png" alt="">
-        <img src="/img/img6.png" alt="">
-        <img src="/img/img7.png" alt="">
-        <img src="/img/img8.png" alt="">
-        <img src="/img/img9.png" alt="">
-        <img src="/img/img10.png" alt="">
-        <img src="/img/img11.png" alt="">
-        <img src="/img/img12.png" alt="">
-        <img src="/img/img13.png" alt="">
-
+        <img class="i1" src="/img/img1.png" alt="">
+        <img class="i2" src="/img/img2.png" alt="">
+        <img class="i3" src="/img/img3.png" alt="">
+        <img class="i4" src="/img/img4.png" alt="">
+        <img class="i5" src="/img/img5.png" alt="">
+        <img class="i6" src="/img/img6.png" alt="">
+        <img class="i7" src="/img/img7.png" alt="">
+        <img class="i8" src="/img/img8.png" alt="">
+        <img class="i9" src="/img/img9.png" alt="">
+        <img class="i10" src="/img/img10.png" alt="">
+        <img class="i11" src="/img/img11.png" alt="">
+        <img class="i12" src="/img/img12.png" alt="">
+        <img class="i13" src="/img/img13.png" alt="">
     </div>
     <div class="content">
         <h1>To Do List</h1>
         <form action="">
-            <input type="text" placeholder="write task here">
-            <button>add</button>
+            <input type="text" placeholder="write task here" data-form-input>
+            <button class="formButton" data-form-button>add</button>
+            <!-- classes para estilização e data attributes para o js -->
         </form>
 
-        <ul class="list">
-            <li class="task"></li>
+        <ul class="list" data-list>
+            
         </ul>
     </div>
+
+
+
+    <script src="taskList.js">
+
+    </script>
 </body>
 
 </html>
