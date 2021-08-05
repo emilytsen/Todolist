@@ -40,7 +40,7 @@
         const btnCheck = document.createElement('button');
         btnCheck.classList.add('btnCheck');
 
-        btnCheck.innerText = '✿';
+        btnCheck.innerText = '✷';
 
         btnCheck.addEventListener('click', finish);
 

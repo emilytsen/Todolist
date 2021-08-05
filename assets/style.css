@@ -195,6 +195,10 @@ form input:focus {
 
 .task{
     margin: 15px;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+
 }
 
 .task p{
@@ -205,13 +209,11 @@ form input:focus {
 }
 
 .btnCheck{
-    width: fit-content;
-    padding: 2px 4px;
-    height: fit-content;
     margin-left: 20px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 5px;
-    background-color: #fff964;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 25px;
 }
 
 
@@ -235,4 +237,5 @@ form input:focus {
     form button {
         width: 16%;
     }
+
 }
