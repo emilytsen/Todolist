@@ -67,7 +67,7 @@ form input:focus {
 }
 
 
-form button {
+.formButton {
     width: 10%;
     margin-left: 10px;
     border-radius: 4px;
@@ -76,7 +76,7 @@ form button {
     background-color: #fffafaa1;
 }
 
-button:hover {
+.formButton:hover {
     background-color: rgb(127 195 103);
 }
 
@@ -191,17 +191,33 @@ button:hover {
     margin-top: 30px;
     align-self: flex-start;
     margin-left: 65px;
-    width: 100%;
 }
 
 .task{
-    max-height: 40px;
+    margin: 15px;
 }
 
 .task p{
     font-size: 140%;
+    width: fit-content;
+    height: fit-content;
+    display: inline;    
 }
 
+.btnCheck{
+    width: fit-content;
+    padding: 2px 4px;
+    height: fit-content;
+    margin-left: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: #fff964;
+}
+
+
+.done{
+    text-decoration: line-through;
+}
 
 
 
@@ -215,8 +231,6 @@ button:hover {
     .content {
         width: 80%;
     }
-
-    .content h1 {}
 
     form button {
         width: 16%;
