@@ -15,7 +15,7 @@ body {
     display: flex;
     font-size: 100%;
     font-family: 'Times New Roman', Times, serif;
-    background-color: snow;
+    background-color: rgb(255, 255, 255);
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
@@ -59,7 +59,7 @@ form input {
 }
 
 form input:focus {
-    background-color: snow;
+    background-color: white;
 }
 
 ::placeholder {
@@ -193,7 +193,7 @@ form input:focus {
     margin-left: 65px;
 }
 
-.task{
+.item{
     margin: 15px;
     /* display: flex;
     flex-direction: row;
@@ -201,19 +201,24 @@ form input:focus {
 
 }
 
-.task p{
+.item p{
     font-size: 140%;
     width: fit-content;
     height: fit-content;
     display: inline;    
 }
 
-.btnCheck{
-    margin-left: 20px;
+.btnItem{
+    margin-left: 30px;
     border: 0;
     background-color: transparent;
     cursor: pointer;
     font-size: 25px;
+}
+
+.btnItem:nth-child(3){
+    margin-left: 10px;
+    font-size: 20px;
 }
 
 
@@ -234,7 +239,7 @@ form input:focus {
         width: 80%;
     }
 
-    form button {
+    .formButton {
         width: 16%;
     }
 
