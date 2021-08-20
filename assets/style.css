@@ -48,14 +48,22 @@ form {
     justify-content: center;
 }
 
-form input {
+.inputTask,
+.inputDate {
     height: 40px;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 4px;
-    width: 80%;
     background-color: #fffafaa1;
     padding: 0 6px;
     color: #000;
+}
+
+.inputTask {
+    width: 50%;
+}
+
+.inputDate {
+    margin-left: 10px;
 }
 
 form input:focus {
@@ -138,7 +146,7 @@ form input:focus {
 
 .i7 {
     top: 85vh;
-    left:72vw;
+    left: 72vw;
     transform: rotate(196deg);
     width: 12%;
 }
@@ -187,13 +195,13 @@ form input:focus {
     width: 12%;
 }
 
-.list{
+.list {
     margin-top: 30px;
     align-self: flex-start;
     margin-left: 65px;
 }
 
-.item{
+.item {
     margin: 15px;
     /* display: flex;
     flex-direction: row;
@@ -201,14 +209,14 @@ form input:focus {
 
 }
 
-.item p{
+.item p {
     font-size: 140%;
     width: fit-content;
     height: fit-content;
-    display: inline;    
+    display: inline;
 }
 
-.btnItem{
+.btnItem {
     margin-left: 30px;
     border: 0;
     background-color: transparent;
@@ -216,13 +224,13 @@ form input:focus {
     font-size: 25px;
 }
 
-.btnItem:nth-child(3){
+.btnItem:nth-child(3) {
     margin-left: 10px;
     font-size: 20px;
 }
 
 
-.done{
+.done {
     text-decoration: line-through;
 }
 
@@ -239,8 +247,18 @@ form input:focus {
         width: 80%;
     }
 
+    .inputTask {
+        width: max-content;
+    }
+
+    .inputDate {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
     .formButton {
         width: 16%;
+        margin-top: 15px;
     }
 
 }

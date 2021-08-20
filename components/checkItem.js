@@ -1,27 +1,26 @@
- //Componente (começa com maiúscula):
- const CheckItem = () => {
+const checkFunction = (update, id) => {
+    const registeredTasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+    registeredTasks[id].completed = !registeredTasks[id].completed;
+    //! oposto ao que está (true or false)
+
+    localStorage.setItem('tasks', JSON.stringify(registeredTasks));
+
+    update();
+}
+
+ const CheckItem = (update, id) => {
     const btnCheck = document.createElement('button');
     btnCheck.classList.add('btnItem');
 
     btnCheck.innerText = '✷';
 
-    btnCheck.addEventListener('click', checkFunction);
+    btnCheck.addEventListener('click', () => checkFunction(update, id));
 
     return btnCheck;
 }
 
-//Função (começa com minúscula):
-const checkFunction = (event) => {
 
-    const actionTarget = event.target;
-    //selecionar um alvo de ação;
-
-    const finishedTask = actionTarget.parentElement;
-    //vai atingir diretamente o elemento pai;
-
-    finishedTask.classList.toggle('done');
-    //true or false
-}
 
 //encapsolar apenas o componente (segurança) para a formação de módulos ( Módulos são pequenas partes do código que juntas formam um todo.):
 
